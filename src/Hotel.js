@@ -6,12 +6,12 @@ const Hotel = ({id, images, name, description, price, removeHotel}) => {
 
 
   return(
-    <article className="single-tour">
+    <article className="single-hotel">
       <img src={images[0]} alt={name} />
       <footer>
-        <div className="tour-info">
+        <div className="hotel-info">
           <h4>{name}</h4>
-          <h4 className="tour-price">{price}</h4>
+          <h4 className="hotel-price">{price}$</h4>
         </div>
         <p>{readMore?description:`${description.substring(0, 150)}...`}
         <button onClick={()=> setReadMore(!readMore)}>
